@@ -19,7 +19,7 @@ let cars = [
     Car(name: "Prius", type: "掀背車", price: "NT$112.9~112.9萬", length: "4575", width: "1760", height: "1470", displacement: "1798", horsepower: "98(72)/5200", torque: "14.5(16.6)/3600"),
     Car(name: "Prius_c", type: "掀背車", price: "NT$81.5~83.5萬", length: "4060", width: "1715", height: "1490", displacement: "1497", horsepower: "73(61)/4800", torque: "11.3(17.2)/4000"),
     Car(name: "Altis_Hybrid", type: "油電複合車", price: "NT$81.8~89.8萬", length: "4630", width: "1780", height: "1435", displacement: "1798", horsepower: "98(72)/5200", torque: "14.5(16.6)/3600"),
-    Car(name: "Camry_Hybrid", type: "油電複合車", price: "NT$117.9~139.9萬", length: "4885", width: "1840", height: "1445", displacement: "2487", horsepower: "178/5700", torque: "22.5/3600~5200"),
+    Car(name: "Camry_Hybrid", type: "油電複合車", price: "NT$117.9~139.9萬", length: "4885", width: "1840", height: "1445", displacement: "2487", horsepower: "178(120)/5700", torque: "22.5(20.6)/3600~5200"),
     Car(name: "Prius", type: "油電複合車", price: "NT$112.9~112.9萬", length: "4575", width: "1760", height: "1470", displacement: "1798", horsepower: "98(72)/5200", torque: "14.5(16.6)/3600"),
     Car(name: "Prius_c", type: "油電複合車", price: "NT$81.5~83.5萬", length: "4060", width: "1715", height: "1490", displacement: "1497", horsepower: "73(61)/4800", torque: "11.3(17.2)/4000"),
     Car(name: "Prius_a", type: "油電複合車", price: "NT$125.0~125.0萬", length: "4645", width: "1775", height: "1600", displacement: "1798", horsepower: "99(82)/5200", torque: "14.5(21.1)/4000"),
@@ -55,7 +55,7 @@ let hatchback = [
 
 let hybrid = [
     Car(name: "Altis_Hybrid", type: "油電複合車", price: "NT$81.8~89.8萬", length: "4630", width: "1780", height: "1435", displacement: "1798", horsepower: "98(72)/5200", torque: "14.5(16.6)/3600"),
-    Car(name: "Camry_Hybrid", type: "油電複合車", price: "NT$117.9~139.9萬", length: "4885", width: "1840", height: "1445", displacement: "2487", horsepower: "178/5700", torque: "22.5/3600~5200"),
+    Car(name: "Camry_Hybrid", type: "油電複合車", price: "NT$117.9~139.9萬", length: "4885", width: "1840", height: "1445", displacement: "2487", horsepower: "178(120)/5700", torque: "22.5(20.6)/3600~5200"),
     Car(name: "Prius", type: "油電複合車", price: "NT$112.9~112.9萬", length: "4575", width: "1760", height: "1470", displacement: "1798", horsepower: "98(72)/5200", torque: "14.5(16.6)/3600"),
     Car(name: "Prius_c", type: "油電複合車", price: "NT$81.5~83.5萬", length: "4060", width: "1715", height: "1490", displacement: "1497", horsepower: "73(61)/4800", torque: "11.3(17.2)/4000"),
     Car(name: "Prius_a", type: "油電複合車", price: "NT$125.0~125.0萬", length: "4645", width: "1775", height: "1600", displacement: "1798", horsepower: "99(82)/5200", torque: "14.5(21.1)/4000"),
