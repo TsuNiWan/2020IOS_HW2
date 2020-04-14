@@ -13,22 +13,26 @@ struct PictureWall: View {
     let amount = 3
     
     var body: some View {
-        List {
-            ForEach(0..<(cars.count)/amount) { (row) in
-                HStack(spacing:10) {
-                    ForEach(0..<self.amount) { (column) in
-                        Image(cars[row*self.amount+column].name)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: self.photoWidth, height: self.photoWidth)
-                            .mask(Circle())
+        NavigationView {
+            List {
+                ForEach(0..<(cars.count)/amount) { (row) in
+                    HStack(spacing:10) {
+                        ForEach(0..<self.amount) { (column) in
+                            Image(cars[row*self.amount+column].name)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: self.photoWidth, height: self.photoWidth)
+                                .mask(Circle())
+                        }
                     }
                 }
+                .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
             }
-            .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
-        }
-        .onAppear {
-            UITableView.appearance().separatorColor = .clear
+            .onAppear {
+                UITableView.appearance().separatorColor = .clear
+            }
+            
+            .navigationBarTitle("圖片牆")
         }
     }
 }
