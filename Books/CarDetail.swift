@@ -57,7 +57,7 @@ struct CarDetail: View {
                         .padding(.top, 5)
                     Text(car.horsepower).font(.title).fontWeight(.heavy).italic().padding(EdgeInsets(top: 2, leading: 10, bottom: 10, trailing: 10))
                     Text("最大扭力(kg-m/rpm)：").font(.custom("jf-openhuninn-1.0", size: 18))
-                    .padding(.top, 5)
+                        .padding(.top, 5)
                     Text(car.torque).font(.title).fontWeight(.heavy).italic()
                         .padding(EdgeInsets(top: 2, leading: 10, bottom: 10, trailing: 10))
                 }
