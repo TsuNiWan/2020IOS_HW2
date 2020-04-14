@@ -9,16 +9,15 @@
 import SwiftUI
 
 struct CarSelectList: View {
-    let carType: Array<Any>
+    var carType: Array<Car>
     var body: some View {
-        List{
-            ForEach(carType.indices) { (item) in
-                NavigationLink(destination: CarDetail(car: self.carType[item] as! Car)) {
-                    CarRow(car: self.carType[item] as! Car)
-                }
+        List(carType) { (cars) in
+            NavigationLink(destination: CarDetail(car: cars)) {
+                CarRow(car: cars)
             }
         }
-        .navigationBarTitle(((carType[0] as! Car).type) + "列表")
+            
+        .navigationBarTitle((carType[0].type) + "列表")
     }
 }
 
