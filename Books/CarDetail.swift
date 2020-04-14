@@ -40,19 +40,19 @@ struct CarDetail: View {
             }
             
             VStack (alignment: .leading) {
-                Text("售價：") +
+                Text("售價：").font(.custom("jf-openhuninn-1.0", size: 18))  +
                     Text(car.price)
                         .font(.title).fontWeight(.heavy).foregroundColor(.red).underline()
                 Group {
-                    Text("全長(mm)：") + Text(car.length).font(.title).fontWeight(.heavy).italic()
-                    Text("全寬(mm)：") + Text(car.width)
+                    Text("全長(mm)：").font(.custom("jf-openhuninn-1.0", size: 18))  + Text(car.length).font(.title).fontWeight(.heavy).italic()
+                    Text("全寬(mm)：").font(.custom("jf-openhuninn-1.0", size: 18))  + Text(car.width)
                     .font(.title).fontWeight(.heavy).italic()
-                    Text("全高(mm)：") + Text(car.height).font(.title).fontWeight(.heavy).italic()
+                    Text("全高(mm)：").font(.custom("jf-openhuninn-1.0", size: 18)) + Text(car.height).font(.title).fontWeight(.heavy).italic()
                 }
                 Group {
-                    Text("排氣量(c.c.)：") + Text(car.displacement).font(.title).fontWeight(.heavy).foregroundColor(.orange).underline()
-                    Text("最大馬力(ps/rpm)：") + Text(car.horsepower).font(.title).fontWeight(.heavy).italic()
-                    Text("最打扭力(kg-m/rpm)：") + Text(car.torque).font(.title).fontWeight(.heavy).italic()
+                    Text("排氣量(c.c.)：").font(.custom("jf-openhuninn-1.0", size: 18))  + Text(car.displacement).font(.title).fontWeight(.heavy).foregroundColor(.orange).underline()
+                    Text("最大馬力(ps/rpm)：").font(.custom("jf-openhuninn-1.0", size: 18))  + Text(car.horsepower).font(.title).fontWeight(.heavy).italic()
+                    Text("最打扭力(kg-m/rpm)：").font(.custom("jf-openhuninn-1.0", size: 18))  + Text(car.torque).font(.title).fontWeight(.heavy).italic()
                 }
             }
         }
